@@ -45,6 +45,11 @@ let product1 = {
     if (product1.discount) {
       console.log("Скидка", product1.discount.percentage + "% до", product1.discount.expirationDate);
       let discountedPrice = product1.price - (product1.price * (product1.discount.percentage / 100)); 
+      if (inStock === true) {
+        console.log("Товар в наличии");
+      } else {
+        console.log("Товара нет в наличии")
+      }    
       console.log("Цена со скидкой:", discountedPrice);
     } else {
       console.log("Цена товара:", product1.price);
