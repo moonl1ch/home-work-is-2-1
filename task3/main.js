@@ -16,7 +16,7 @@ let product1 = {
   
   let product2 = {
     name: "Ноутбук",
-    price: 80000,
+    price: 83000,
     inStock: true,
     brand: "HP",
     specifications: {
@@ -35,7 +35,11 @@ let product1 = {
     name: "Екатерина",
     budget: 90000
   };
-  
+  if ( product1.inStock === true ) {
+    console.log("Товар " + product1.name + " есть на складе ");
+    } else {
+        console.log("Товара " + product1.name + " нет на складе ");
+    }
   if (customer1.budget < product1.price) {
     console.log(customer1.name + ", у вас недостаточно средств для покупки " + product1.name);
   } else {
@@ -44,18 +48,17 @@ let product1 = {
     console.log("Технические характеристики товара:", product1.specifications); 
     if (product1.discount) {
       console.log("Скидка", product1.discount.percentage + "% до", product1.discount.expirationDate);
-      let discountedPrice = product1.price - (product1.price * (product1.discount.percentage / 100)); 
-      if (inStock === true) {
-        console.log("Товар в наличии");
-      } else {
-        console.log("Товара нет в наличии")
-      }    
+      let discountedPrice = product1.price - (product1.price * (product1.discount.percentage / 100));   
       console.log("Цена со скидкой:", discountedPrice);
     } else {
       console.log("Цена товара:", product1.price);
     }
   }
-  
+  if ( product2.inStock === true ) {
+    console.log("Товар " + product2.name + " есть на складе ");
+    } else {
+        console.log("Товара " + product2.name + " нет на складе ");
+    }
   if (customer2.budget < product2.price) {
     console.log(customer2.name + ", у вас недостаточно средств для покупки " + product2.name);
   } else {
