@@ -1,4 +1,4 @@
-let temperature = 8;
+let temperature = 36;
 
 if (temperature > 30) {
   console.log("Вы можете надеть легкую одежду.");
