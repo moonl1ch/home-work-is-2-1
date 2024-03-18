@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расчет стоимости строительных материалов</title>
+</head>
+<body>
+  <div>
+    <label for="quantity-bricks">Количество кирпичей:</label>
+    <input type="number" id="quantity-bricks">
+    <label for="price-bricks">Цена кирпичей:</label>
+    <input type="number" id="price-bricks">
+  </div>
+  <div>
+    <label for="quantity-cement">Количество цемента:</label>
+    <input type="number" id="quantity-cement">
+    <label for="price-cement">Цена цемента:</label>
+    <input type="number" id="price-cement">
+  </div>
+  <div>
+    <label for="quantity-boards">Количество досок:</label>
+    <input type="number" id="quantity-boards">
+    <label for="price-boards">Цена досок:</label>
+    <input type="number" id="price-boards">
+  </div>
+  <button onclick="calculateTotal()">Рассчитать</button>
+  <p id="total-cost"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
